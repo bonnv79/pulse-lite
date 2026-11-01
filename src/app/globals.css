@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+/* Class-based dark mode: <html class="dark"> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Design tokens. Change these to rebrand the whole template.
+ * Values use OKLCH so light and dark palettes stay perceptually even.
+ */
+:root {
+  --brand: oklch(0.58 0.16 165);        /* primary accent (teal-green) */
+  --brand-soft: oklch(0.95 0.04 165);
+  --brand-fg: oklch(0.99 0 0);
+
+  --bg: oklch(0.985 0.002 250);
+  --surface: oklch(1 0 0);
+  --surface-2: oklch(0.97 0.003 250);
+  --border: oklch(0.92 0.004 250);
+  --fg: oklch(0.22 0.01 250);
+  --muted: oklch(0.52 0.012 250);
+
+  --success: oklch(0.6 0.15 150);
+  --warning: oklch(0.72 0.15 75);
+  --danger: oklch(0.6 0.2 25);
+
+  --chart-1: var(--brand);
+  --chart-2: oklch(0.62 0.14 260);
+  --chart-3: oklch(0.72 0.14 75);
+  --chart-4: oklch(0.65 0.17 330);
+  --chart-grid: oklch(0.92 0.004 250);
+}
+
+.dark {
+  --brand: oklch(0.72 0.15 165);
+  --brand-soft: oklch(0.3 0.06 165);
+  --brand-fg: oklch(0.18 0.02 165);
+
+  --bg: oklch(0.16 0.008 250);
+  --surface: oklch(0.2 0.009 250);
+  --surface-2: oklch(0.24 0.01 250);
+  --border: oklch(0.3 0.01 250);
+  --fg: oklch(0.95 0.004 250);
+  --muted: oklch(0.7 0.012 250);
+
+  --success: oklch(0.72 0.15 150);
+  --warning: oklch(0.8 0.14 75);
+  --danger: oklch(0.7 0.18 25);
+
+  --chart-2: oklch(0.72 0.13 260);
+  --chart-3: oklch(0.8 0.13 75);
+  --chart-4: oklch(0.74 0.15 330);
+  --chart-grid: oklch(0.3 0.01 250);
+}
+
+@theme inline {
+  --color-brand: var(--brand);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-fg: var(--brand-fg);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans);
+  }
+  *,
+  ::before,
+  ::after {
+    border-color: var(--border);
+  }
+  :focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
