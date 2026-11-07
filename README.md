@@ -43,3 +43,13 @@ Open http://localhost:3000.
 MIT, see [LICENSE](LICENSE). Third-party packages keep their own licenses (Next.js, React, Tailwind CSS, Recharts: MIT; Lucide: ISC; Geist font: OFL 1.1).
 
 Demo data is fictional.
+
+## Changelog
+
+### 1.0.1
+- Select menus use a custom chevron with even spacing in every browser.
+- Checkboxes follow the theme colors in light and dark mode.
+- Number fields no longer show browser spin buttons.
+
+### 1.0.0
+- First release.
