@@ -44,6 +44,11 @@ MIT, see [LICENSE](LICENSE). Third-party packages keep their own licenses (Next.
 
 Demo data is fictional.
 
+## More templates
+
+- [Pulse](https://www.bontemplates.com/product): the full SaaS analytics dashboard (customers, revenue, settings, auth).
+- [Tandem](https://crm.bontemplates.com/product): a CRM dashboard with a drag-and-drop pipeline, contacts and tasks, in the same design system.
+
 ## Changelog
 
 ### 1.0.1
