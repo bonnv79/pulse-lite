@@ -2,7 +2,7 @@
 
 A free, MIT-licensed dashboard starter built with **Next.js 16**, **React 19**, **TypeScript**, **Tailwind CSS 4** and **Recharts**.
 
-Pulse Lite is the free version of [Pulse](https://www.bontemplates.com/product). Use it in any project, personal or commercial.
+Pulse Lite is the free version of [Pulse](https://pulse.bontemplates.com/product). Use it in any project, personal or commercial.
 
 ## What's inside
 
@@ -29,7 +29,7 @@ Open http://localhost:3000.
 
 ## Lite vs Pro
 
-| | Lite (free) | [Pro](https://www.bontemplates.com/product) |
+| | Lite (free) | [Pro](https://pulse.bontemplates.com/product) |
 | --- | --- | --- |
 | Overview with charts and KPIs | ✓ | ✓ |
 | Dark mode, responsive layout | ✓ | ✓ |
@@ -46,7 +46,7 @@ Demo data is fictional.
 
 ## More templates
 
-- [Pulse](https://www.bontemplates.com/product): the full SaaS analytics dashboard (customers, revenue, settings, auth).
+- [Pulse](https://pulse.bontemplates.com/product): the full SaaS analytics dashboard (customers, revenue, settings, auth).
 - [Tandem](https://crm.bontemplates.com/product): a CRM dashboard with a drag-and-drop pipeline, contacts and tasks, in the same design system.
 
 ## Changelog
